@@ -26,6 +26,7 @@ public class WorkerResource {
     @Autowired
     private WorkerRepository workerRepository;
 
+
     @GetMapping
     public ResponseEntity<List<Worker>> findAll(){
         List<Worker> list = workerRepository.findAll();
